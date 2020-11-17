@@ -1,0 +1,154 @@
+/**********
+ * GLOBAL *
+ *********/
+
+html {
+    font-size: 62.5%;
+    /*Reset for REM's -62.5% = 10px de 16px*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3.1rem;
+}
+
+h3 {
+    font-size: 2.7rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
+
+/**************
+ * UTILIDADES *
+ *************/
+
+.text-left {
+    text-align: left!important
+}
+
+.text-right {
+    text-align: right!important
+}
+
+.text-center {
+    text-align: center!important
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none
+}
+
+.margin-bt-auto {
+    margin-bottom: auto!important
+}
+
+.list-inline-item {
+    display: inline-block
+}
+
+.blue-lt {
+    color: #4f7ea5;
+}
+
+.white-lt {
+    color: #ffffff;
+}
+
+.shadow {
+    box-shadow: 0rem .5rem .5rem 0 rgba(0, 0, 0, 0.25);
+}
+
+/*Botones*/
+
+.boton {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 1.1rem;
+    margin-top: 3rem;
+    text-align: center;
+    transition: all 0.2s;
+    border-radius: 5px;
+    background-color: #4f7ea5;
+}
+
+.boton:hover {
+    color: #ffffff;
+    background-color: #4f7ea5;
+    padding: 1.2rem 1.5rem;
+}
