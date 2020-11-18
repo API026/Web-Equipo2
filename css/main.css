@@ -45,8 +45,16 @@ h4 {
     font-size: 2.5rem;
 }
 
+p {
+    font-size: 1.9rem;
+}
+
 img {
     max-width: 100%;
+}
+
+ul {
+    list-style: none;
 }
 
 .container {
@@ -54,7 +62,8 @@ img {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    margin-bottom: 10rem;
 }
 
 @media (min-width:576px) {
@@ -151,4 +160,44 @@ img {
     color: #ffffff;
     background-color: #4f7ea5;
     padding: 1.2rem 1.5rem;
+}
+
+/**********
+ * PAGINA *
+ *********/
+
+.grid-container {
+    margin-top: 5rem;
+}
+
+.show-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-card img {
+    width: 37.5rem;
+    height: 54.5rem;
+}
+
+.show-card p {
+    font-size: 1.5rem;
+}
+
+.show-card {
+    flex-basis: calc(33.3%-1rem);
+    margin: .6rem .6rem .6rem .6rem;
+    background-color: #3712414d;
+}
+
+.card-cont {
+    padding: 2rem;
+}
+
+.director, .date {
+    margin: 0;
+}
+
+.description {
+    margin-top: 2rem;
 }
