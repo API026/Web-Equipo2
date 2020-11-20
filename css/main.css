@@ -36,19 +36,19 @@ h1 {
 }
 
 h2 {
-    font-size: 3.1rem;
-}
-
-h3 {
     font-size: 2.7rem;
 }
 
+h3 {
+    font-size: 2.3rem;
+}
+
 h4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 p {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
 }
 
 img {
@@ -202,4 +202,14 @@ ul {
 
 .description {
     margin-top: 2rem;
+}
+
+.aux-list-cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aux-list-cont p{
+    margin: 0;
+    padding-top: .75rem;
 }
