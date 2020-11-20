@@ -172,9 +172,9 @@ ul {
     margin-top: 5rem;
 }
 
-.show-container {
-    display: flex;
-    justify-content: space-between;
+#elem{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .show-card img {
