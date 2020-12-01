@@ -168,6 +168,11 @@ ul {
  * PAGINA *
  *********/
 
+.spacer {
+    background-color: #ffffff;
+    height: .7rem;
+}
+
 .container-display {
     position: relative;
     display: inline-block;
@@ -203,14 +208,6 @@ ul {
 
 .card-cont p {
     margin: 0;
-}
-
-.director, .date {
-    margin: 0;
-}
-
-.description {
-    margin-top: 2rem;
 }
 
 .rate {

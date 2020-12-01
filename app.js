@@ -15,11 +15,11 @@ fetch(url)
                 </div>
                 <ul class = "card-cont">
                     <h4 class= "">${data[i].name}</h4>
-                    <li><p>País: ${data[i].network.country.name}</p></li>
-                    <li><p>Canal de transmición: ${data[i].network.name}</p></li>
-                    <li><p>Generos: ${data[i].genres}</p></li>
+                    <li><p>País: <strong>${data[i].network.country.name}</strong></p></li>
+                    <li><p>Canal de transmición: <strong>${data[i].network.name}</strong></p></li>
+                    <li><p>Generos: <strong>${data[i].genres}</strong></p></li>
                     <br>
-                    <li><p>Descrpción: ${data[i].summary}</p></li>
+                    <li><p>${data[i].summary}</p></li>
                 </ul>
                 </article>
                 `
