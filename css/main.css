@@ -186,6 +186,14 @@ ul {
     display: grid;
     grid-template-columns: 33% 33% 33%;
 }
+#elem1 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+#elem2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
 
 .show-card img {
     width: 37.5rem;
