@@ -3,26 +3,27 @@ fetch(url) //El fetch guarda nuestra url y empezamos con las condiciones
     .then(respose => respose.json()) //Que nos responda con el json si es que funciona
     .then(data => { //nos devuelve los datos del mismo
 
-        var string = ""; //declaramos variables el string guardará el nombre
-        var cat = "";
+        var string = ""; //declaramos variables el string guardará el nombre de nuestra serie
         for (let i = 0; i < 18; i++) {
-            string = data.All_shows[i].name;
-
+            string = data.All_shows[i].name; //Se guarda el nombre
+            //En este ciclo cambiamos los espacios de cada string por el espacio de busqueda 
+            //por default %20
             for (let j = 0; j < string.length; j++) {
                 if (string[j] == " ") {
                     string[j] = "%20";
                 }
             }
-
-            cat = data.All_shows[i].category;
-
+            //creamos otro fetch para cargar los métodos de búsqueda del api externo 
             fetch('http://api.tvmaze.com/search/shows?q=' + string)
                 .then(response => response.json())
                 .then(data => {
+                    //creamos un elemento para cada top por cuestión de diseño del CSS
                     let element = document.getElementById('elem')
                     let element1 = document.getElementById('elem1')
                     let element2 = document.getElementById('elem2')
-
+                    
+                    //Concatenamos a cada elemento los datos que deseamos mostrar con las etiquetas
+                    //de HTML para cada element 
                     if (i >=0 && i <=5) {
                         element.innerHTML += `
                         <article class="show-card shadow">
@@ -69,12 +70,14 @@ fetch(url) //El fetch guarda nuestra url y empezamos con las condiciones
                         </article>
                         `
                     }
-
+                    //Mostramos los datos en consola
                     console.log(data)
                 })
+                //el catch de los errores
                 .catch(err => console.log(err))
         }
-
+        //Mostramos los datos en consola
         console.log(data)
     })
+    //el catch de los errores
     .catch(err => console.log(err))
