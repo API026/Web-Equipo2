@@ -204,12 +204,3 @@ ul {
     margin-top: 2rem;
 }
 
-.aux-list-cont{
-    display: flex;
-    justify-content: space-between;
-}
-
-.aux-list-cont p{
-    margin: 0;
-    padding-top: .75rem;
-}
