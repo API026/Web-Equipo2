@@ -18,7 +18,7 @@ fetch(url)
             fetch('http://api.tvmaze.com/search/shows?q=' + string)
                 .then(response => response.json())
                 .then(data => {
-                    let element = document.getElementById('grid-container')
+                    let element = document.getElementById('elem')
                     if (i == 0) {
                         element.innerHTML += `<h3>TOP ANIMATION</h3><div class="spacer"></div>`
                     } else if (i == 5) {
@@ -29,7 +29,6 @@ fetch(url)
 
 
                     element.innerHTML += `
-                    <div id="elem">
                     <article class="show-card shadow">
                         <div class="container-display">
                             <img src="${data[0].show.image.original}"></img>
@@ -42,7 +41,7 @@ fetch(url)
                             <li><p>${data[0].show.summary}</p></li>
                         </ul>
                     </article>
-                    </div>`
+                    `
 
                     console.log(data)
                 })
